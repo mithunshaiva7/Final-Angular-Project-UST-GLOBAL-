@@ -1,0 +1,25 @@
+<div class="container">
+    <table class="table table-bordered table-hover">
+        <thead class="bg-dark text-white">
+            <tr>
+                <th>NAME</th>
+                <th>USERNAME</th>
+                <th>EMAIL</th>
+                <th>WEBSITE</th>
+                <th>ADDRESS</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let u of users">
+                
+                <td>{{u.name}}</td>
+                <td>{{u.username}}</td>
+                <td>{{u.email}}</td>
+                <td>{{u.website}}</td>
+                <td>{{u.address | json}}</td>
+ </tr>
+            
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,21 @@
+<div class="container">
+    <br>
+    <br>
+    <br>
+    <div class="col-md-4 offset-md-4">
+<form action="" class="form-group">
+        <input type="text" name="inputTask" class="form-control" id="inputTask" placeholder="Enter Task" [(ngModel)]="inputTask">
+    <div class="text-center">
+        <button class="btn btn-outline-primary" type="reset" (click)="send(inputTask)">Add Task</button>
+    </div>
+    </form>
+    
+    <br>
+    <br>
+    <ul *ngFor="let t of tasks,index as i" class="list-group">
+        <li  class="list-group-item active">{{t}}</li>
+        <button type="button" (click)="delete(i)" class="btn btn-outline-danger">Delete</button>
+        
+    </ul>
+</div>
+</div>
