@@ -4,7 +4,7 @@
     <br>
     <div class="col-md-4 offset-md-4">
 <form action="" class="form-group">
-        <input type="text" name="inputTask" class="form-control" id="inputTask" placeholder="Enter Task" [(ngModel)]="inputTask">
+        <input type="text" name="inputTask" class="form-control" id="inputTask" placeholder="Enter Task" [(ngModel)]="inputTask" required>
     <div class="text-center">
         <button class="btn btn-outline-primary" type="reset" (click)="send(inputTask)">Add Task</button>
     </div>
